@@ -1,0 +1,49 @@
+#SNS ASG Terminate Event
+{
+    "Records": [
+        {
+            "EventSource": "aws:sns",
+            "EventVersion": "1.0",
+            "EventSubscriptionArn": "arn:aws:sns:eu-west-1:054614622558:DEVAPPPS-PTL-TEST-T:125cfc9c-07d6-4dde-b40d-662f740bf594",
+            "Sns": {
+                "Type": "Notification",
+                "MessageId": "64e88b9f-a3a3-502d-ac38-daacdc75c6ac",
+                "TopicArn": "arn:aws:sns:eu-west-1:054614622558:DEVAPPPS-PTL-TEST-T",
+                "Subject": "Auto Scaling: termination for group \"DEV/APP/PS-OLCS-PRI-MATCH-ASG\"",
+                "Message": "{\"Progress\":50,\"AccountId\":\"054614622558\",\"Description\":\"Terminating EC2 instance: i-00fbbedeb97423271\",\"RequestId\":\"8d9c756b-5720-40a2-a67c-a696a595572b\",\"EndTime\":\"2017-03-03T14:28:38.656Z\",\"AutoScalingGroupARN\":\"arn:aws:autoscaling:eu-west-1:054614622558:autoScalingGroup:a50e5b7a-a8e3-4d22-b47c-a30f1d79eda0:autoScalingGroupName/DEV/APP/PS-OLCS-PRI-MATCH-ASG\",\"ActivityId\":\"8d9c756b-5720-40a2-a67c-a696a595572b\",\"StartTime\":\"2017-03-03T14:27:55.365Z\",\"Service\":\"AWS Auto Scaling\",\"Time\":\"2017-03-03T14:28:38.656Z\",\"EC2InstanceId\":\"i-00fbbedeb97423271\",\"StatusCode\":\"InProgress\",\"StatusMessage\":\"\",\"Details\":{\"Subnet ID\":\"subnet-215d3857\",\"Availability Zone\":\"eu-west-1a\"},\"AutoScalingGroupName\":\"DEV/APP/PS-OLCS-PRI-MATCH-ASG\",\"Cause\":\"At 2017-03-03T14:27:55Z an instance was taken out of service in response to a EC2 health check indicating it has been terminated or stopped.\",\"Event\":\"autoscaling:EC2_INSTANCE_TERMINATE\"}",
+                "Timestamp": "2017-03-03T14:28:38.719Z",
+                "SignatureVersion": "1",
+                "Signature": "iW9MWGxoMRgfQUfPQSBpjQdEYFqypxd5R61b9XPUGNDo1bmBUpObrI1pYoZBnD+f4lAnNTMmPBRmdimtJY+vEY83QPzrgzgYfaFXt9MHZdc5Va6iUM1VKAKroboYZUu1tGZWHGfz8ja8D22RFLLZzcpj9VmeWjzUrx2Tc0Tkpmi06shFLf00aLYCpjf0HMeSKonu51tmtIgYishRBTuI/gvslL+4OUW6w7Gkhwsj2buXmch8BMgHJk54I1JoAAEdP/JA4uKF6ONNHccb60JpbCeigJfYosehxnGLYfhnBPFc5bNvEM9XEhsgcNPkYmX2x9lFKKm0q1YdUdUxD8IeRA==",
+                "SigningCertUrl": "https://sns.eu-west-1.amazonaws.com/SimpleNotificationService-b95095beb82e8f6a046b3aafc7f4149a.pem",
+                "UnsubscribeUrl": "https://sns.eu-west-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:eu-west-1:054614622558:DEVAPPPS-PTL-TEST-T:125cfc9c-07d6-4dde-b40d-662f740bf594",
+                "MessageAttributes": {}
+            }
+        }
+    ]
+}
+
+
+#SNS ASG Launch Event
+{"Records": 
+	[
+		{
+			"EventVersion": "1.0", 
+			"EventSubscriptionArn": "arn:aws:sns:eu-west-1:054614622558:DEVAPPPS-PTL-TEST-T:298a0979-d856-4ecd-80b7-a8e5ec834fd2", 
+			"EventSource": "aws:sns", 
+			"Sns": 
+			{
+				"SignatureVersion": "1", 
+				"Timestamp": "2017-03-06T10:20:22.441Z", 
+				"Signature": "A0cEu5Ml7vnXaDFMKt22NU2Wz5c2hDfNPZV/u95EZCJF/vVpIFCuoN0brd1ayFs7Kc7LXQ6YSCJcizj99GkdRUONZ+Wkbh7z72CZZBjWXrUEX+O8F6yhs/mxOsDz2LDwFZJJa6y8DxR26oQF4asx+Q8agBeC4necIUvboKM6DP7Az5jAsY/Zlni8toMlnFOAi//KPAJBJ61S/KkJVapGLzPyayZwPOWEvsZmWuDfbLa6+0UNzDKlooNiA2Ogf4/LQSH7p0rnXNxX2D992PHuMDdVznOpTy33KOr917joxT6z1evczIgsQetESW571dBwOw0q4xnbAo/dcYKvyT7WiQ==", 
+				"SigningCertUrl": "https://sns.eu-west-1.amazonaws.com/SimpleNotificationService-b95095beb82e8f6a046b3aafc7f4149a.pem", 
+				"MessageId": "8a446b19-65f4-5f6a-b405-3a2e5fd22c11", 
+				"Message": "{\"Progress\":50,\"AccountId\":\"054614622558\",\"Description\":\"Launching a new EC2 instance: i-0181c4caa6f988dd2\",\"RequestId\":\"4d6db4b3-7c4c-42a6-bf08-8bb3832972b8\",\"EndTime\":\"2017-03-06T10:20:22.418Z\",\"AutoScalingGroupARN\":\"arn:aws:autoscaling:eu-west-1:054614622558:autoScalingGroup:a50e5b7a-a8e3-4d22-b47c-a30f1d79eda0:autoScalingGroupName/DEV/APP/PS-OLCS-PRI-MATCH-ASG\",\"ActivityId\":\"4d6db4b3-7c4c-42a6-bf08-8bb3832972b8\",\"StartTime\":\"2017-03-06T10:19:35.282Z\",\"Service\":\"AWS Auto Scaling\",\"Time\":\"2017-03-06T10:20:22.418Z\",\"EC2InstanceId\":\"i-0181c4caa6f988dd2\",\"StatusCode\":\"InProgress\",\"StatusMessage\":\"\",\"Details\":{\"Subnet ID\":\"subnet-830e66e7\",\"Availability Zone\":\"eu-west-1c\"},\"AutoScalingGroupName\":\"DEV/APP/PS-OLCS-PRI-MATCH-ASG\",\"Cause\":\"At 2017-03-06T10:19:33Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 0 to 1.\",\"Event\":\"autoscaling:EC2_INSTANCE_LAUNCH\"}", 
+				"MessageAttributes": {}, 
+				"Type": "Notification", 
+				"UnsubscribeUrl": "https://sns.eu-west-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:eu-west-1:054614622558:DEVAPPPS-PTL-TEST-T:298a0979-d856-4ecd-80b7-a8e5ec834fd2", 
+				"TopicArn": "arn:aws:sns:eu-west-1:054614622558:DEVAPPPS-PTL-TEST-T", 
+				"Subject": "Auto Scaling: launch for group DEV/APP/PS-OLCS-PRI-MATCH-ASG"
+			}
+		}
+	]
+}
